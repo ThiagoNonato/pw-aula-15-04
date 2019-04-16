@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Calculadora De Churrasco</title>
+    <meta charset="utf-8">
+    <style>
+        body{
+            background-color: rgb(228, 145, 21);
+            text-decoration-color: white;
+        }
+        
+    </style>
+     <script type="text/javascript">
+         
+       function calculadoraChurrasco(){                
+        var VaiTerCarne = document.getElementById('Carne').checked;
+        var VaiTerLinguiça = document.getElementById('Linguiça').checked;
+        var VaiTerFrango = document.getElementById('Frango').checked;
+        var VaiTerPão = document.getElementById('Pão').checked;
+        var VaiTerRefrigerante = document.getElementById('Refrigerante').checked;
+        var VaiTerSuco = document.getElementById('Suco').checked;
+        var VaiTerCerveja = document.getElementById('Cerveja').checked;
+        var QtdCarne = 400.00;
+        var QtdLinguiça= 100.00;
+        var QtdFrango = 100.00;
+        var QtdPão = 0.3;
+        var QtdRefrigerante = 600.00;
+        var QtdSuco = 500.00;
+        var QtdCerveja = 500.00;
+        var soma = 0;
+        var QtdPessoas = document.getElementById('pessoas').getAttribute("value");
+        console.log(QtdPessoas);        
+        
+       }
+
+   </script>
+  </head>
+  <body>
+
+        <h1>Calculadora de Churrasco</h1>
+        <h3>Selecione o que você ira consumir no churrasco.</h3>
+        <input type="checkbox" id="Carne" name="Churrasco" value="carne" /> Carne <p></p>
+        <input type="checkbox" id="Linguiça" name="Churrasco" value="linguiça" /> Linguiça <p></p>
+        <input type="checkbox" id="Frango" name="Churrasco" value="frango"/> Frango <p></p>
+        <input type="checkbox" id="Pão" name="Churrasco" value="pão" /> Pão de Alho <p></p>
+        <input type="checkbox" id="Refrigerante" name="Churrasco" value="refrigerante" /> Refrigerante <p></p>
+        <input type="checkbox" id="Suco" name="Churrasco" value="suco" /> Suco<p></p>
+        <input type="checkbox" id="Cerveja" name="Churrasco" value="Cerveja" /> Cerveja <p></p>
+        <h3>Informe a quantidade de pessoas que irão ao churrasco</h3>
+        <form method="get">
+                <input type="text" id="pessoas" value="" />
+                <input type="submit" id="pessoas-enviar" value="Enviar" />
+            </form>
+            <p></p>
+            <button type="button" onclick="calculadoraChurrasco()">Resultado</button>
+            
+  </body>
+</html>
