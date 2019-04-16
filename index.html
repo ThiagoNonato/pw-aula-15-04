@@ -28,7 +28,7 @@
         var QtdSuco = 500.00;
         var QtdCerveja = 500.00;
         var soma = 0;
-        var QtdPessoas = document.getElementById('pessoas').getAttribute("value");
+        var QtdPessoas = document.getElementById('pessoas').value;;
         console.log(QtdPessoas);        
         
        }
@@ -49,7 +49,6 @@
         <h3>Informe a quantidade de pessoas que irão ao churrasco</h3>
         <form method="get">
                 <input type="text" id="pessoas" value="" />
-                <input type="submit" id="pessoas-enviar" value="Enviar" />
             </form>
             <p></p>
             <button type="button" onclick="calculadoraChurrasco()">Resultado</button>
